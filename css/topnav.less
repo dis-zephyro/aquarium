@@ -1,0 +1,50 @@
+.topnav {
+	left: 0;
+	right: 0;
+	top: 20px;
+	z-index: 100;
+	position: fixed;
+
+	ul {
+		padding: 12px 0;
+		margin-left: 30px;
+		text-align: center;
+
+		li {
+			font-size: 14px;
+			padding: 0 15px;
+			position: relative;
+			display: inline-block;
+
+			a {
+				color: #007ba3;
+				text-decoration: none;
+			}
+
+			a:hover {
+				text-decoration: underline;
+			}
+		}
+
+		li:first-child:after {
+			display: none;
+			visibility: hidden;
+		}
+
+		li:after {
+			left: -4px;
+			top: 6px;
+			content: '';
+			width: 4px;
+			height: 3px;
+			background: url("../img/point.png") 0 0 no-repeat;
+			font-size: 14px;
+			position: absolute;
+		}
+	}
+}
+
+.topnav.bg {
+	top:0;
+	background: rgba(255,255,255, 0.8);
+}

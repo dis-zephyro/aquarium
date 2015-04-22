@@ -11,6 +11,7 @@
 
         <link rel="stylesheet" href="css/normalize.css">
         <link rel="stylesheet" href="js/vendor/jquery.fancybox/jquery.fancybox.css">
+        <link rel="stylesheet/less" href="js/vendor/slick/slick.css">
         <link rel="stylesheet/less" href="css/main.less">
         <script src="js/vendor/less.min.js"></script>
         <script src="js/vendor/modernizr-2.8.3.min.js"></script>
@@ -245,21 +246,210 @@
             </div>
         </section>
         <section class="block06">
-            <div class="container"></div>
+            <div class="container">
+                <h2>Доставка и оплата</h2>
+                <div class="clearfix">
+                    <div class="column float-left">
+                        <h4>Бережная доставка</h4>
+                        <ul>
+                            <li>Мы работаем только с проверенными и надежными транспортными компаниями.</li>
+                            <li>При транспортировке груз тщательно упаковывается, т.о. мы обеспечиваем сохранность аквариумного комплекса.</li>
+                            <li>Груз застрахован и, в случае повреждения или утери, страховая компания обязана возместить весь ущерб.</li>
+                            <li>Стоимость доставки Транспортной компанией рассчитывается индивидуально, в зависимости от веса и объема аквариума, а так же от тарифов </li>
+                        </ul>
+                    </div>
+                    <div class="column float-right">
+                        <h4>Гибкая система оплаты</h4>
+                        <ul>
+                            <li>Оплата производится в два этапа: 50% - авансовый платеж до начала изготовления аквариума и финальный платеж после получения аквариума или аквариумного комплекса</li>
+                            <li>Вы можете осуществить платеж любым удобным для Вас способом (по карте, онлан-сервисы, банковский перевод и т. д.)</li>
+                            <li>Мы закрепляем свои обязательства перед Вами и прописывам сроки изготовления и наши гарантийные обязательства в договоре.</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="clearfix">
+                    <div class="column float-left">
+                        <div class="text-center">
+                            <a class="btn invert" href="#popup">Рассчитать стоимость доставки</a>
+                        </div>
+                    </div>
+                    <div class="column float-right">
+                        <span class="robo"></span>
+                        <span class="visa"></span>
+                        <span class="bank"></span>
+                    </div>
+                </div>
+            </div>
         </section>
         <section class="block07">
-            <div class="container"></div>
+            <div class="block-inner">
+                <div class="container">
+                    <h2>Отзывы наших клиентов</h2>
+                    <div class="slider-inner">
+                        <ul class="slider clearfix">
+                            <li>
+                                <div class="video">
+                                    <a href="images/video.jpg" class="source">
+                                        <img src="images/video.jpg" alt="">
+                                    </a>
+                                </div>
+                                <div class="text">
+                                    <div class="reply-author">Алексей Иванов, г.Москва</div>
+                                    <div class="reply-legend">Аквариумный комплекс "Прямоугольный", 200л</div>
+                                    <p>This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt auctor a ornare odio. Sed non  mauris vitae erat.</p>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="video">
+                                    <a href="images/video.jpg" class="source">
+                                        <img src="images/video.jpg" alt="">
+                                    </a>
+                                </div>
+                                <div class="text">
+                                    <div class="reply-author">Алексей Иванов, г.Москва</div>
+                                    <div class="reply-legend">Аквариумный комплекс "Прямоугольный", 200л</div>
+                                    <p>This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt auctor a ornare odio. Sed non  mauris vitae erat.</p>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="text-center">
+                        <a href="#popup" class="btn">Оставить заявку</a>
+                    </div>
+                    <div class="reply">
+                        <ul>
+                            <li>
+                                <div class="reply-avatar">
+                                    <img src="images/reply-avatar-01.png" alt="Отзыв">
+                                </div>
+                                <div class="reply-text">
+                                    <div class="reply-author">Алексей Иванов, г.Москва</div>
+                                    <div class="reply-legend">Аквариумный комплекс "Прямоугольный", 200л</div>
+                                    <p>This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt auctor a ornare odio. Sed non  mauris vitae erat. </p>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="reply-avatar">
+                                    <img src="images/reply-avatar-01.png" alt="Отзыв">
+                                </div>
+                                <div class="reply-text">
+                                    <div class="reply-author">Алексей Иванов, г.Москва</div>
+                                    <div class="reply-legend">Аквариумный комплекс "Прямоугольный", 200л</div>
+                                    <p>This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt auctor a ornare odio. Sed non  mauris vitae erat. </p>
+                                </div>
+                            </li>
+                        </ul>
+                        <ul>
+                            <li>
+                                <div class="reply-avatar">
+                                    <img src="images/reply-avatar-01.png" alt="Отзыв">
+                                </div>
+                                <div class="reply-text">
+                                    <div class="reply-author">Алексей Иванов, г.Москва</div>
+                                    <div class="reply-legend">Аквариумный комплекс "Прямоугольный", 200л</div>
+                                    <p>This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt auctor a ornare odio. Sed non  mauris vitae erat. </p>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="reply-avatar">
+                                    <img src="images/reply-avatar-01.png" alt="Отзыв">
+                                </div>
+                                <div class="reply-text">
+                                    <div class="reply-author">Алексей Иванов, г.Москва</div>
+                                    <div class="reply-legend">Аквариумный комплекс "Прямоугольный", 200л</div>
+                                    <p>This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt auctor a ornare odio. Sed non  mauris vitae erat. </p>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="text-center">
+                        <span class="reply-more">Больше отзывов</span>
+                    </div>
+                </div>
+            </div>
         </section>
         <section class="block08">
-            <div class="container"></div>
+            <div class="container">
+                <h2>Что нужно, чтобы стать обладателем<br/>своего аквариума?</h2>
+                <ul class="step">
+                    <li class="item1">
+                        <span>1 Вы оставляете заявку</span>
+                        <a href="#popup" class="btn btn-blue">Оставить заявку</a>
+                    </li>
+                    <li class="item2">2 Уточняем детали<br>и оформляем договор</li>
+                    <li class="item3">3 Оплачиваете аванс 50%<br/>удобным для Вас способом</li>
+                    <li class="item4">4 Изготавливаем аквариум<br/>в оговоренные сроки</li>
+                    <li class="item5">5 Осуществляем бережную<br/>оставку</li>
+                    <li class="item6">6 Получаете аквариум<br/>оплачиваете<br/>оставшуюся сумму</li>
+                    <li class="item7"><a href="#popup" class="btn">Оставить заявку</a></li>
+                </ul>
+            </div>
         </section>
         <footer class="block09">
-
+            <div class="footer-top">
+                <div class="container">
+                    <h2>Внимание, акция!</h2>
+                    <div class="text-block">Оставьте заявку на приобретение аквариумного комплекса ПРЯМО СЕЙЧАС и получите доставку <span>БЕСПЛАТНО!</span></div>
+                    <div class="form-block">
+                        <div class="form-title">Форма заказа<span>Аквариумного комплекса</span></div>
+                        <form enctype="multipart/form-data" method="post" class="cform mini form">
+                            <ol class="cf-ol">
+                                <li>
+                                    <select>
+                                        <option>Выберите модель</option>
+                                        <option>Модель 1</option>
+                                        <option>Модель 2</option>
+                                        <option>Модель 3</option>
+                                        <option>Модель 4</option>
+                                    </select>
+                                </li>
+                                <li>
+                                    <label><span></span></label>
+                                    <input type="text" name="cf8_field_1" class="single" value="Введите Ваше имя" onfocus="clearField(this)" onblur="setField(this)"/>
+                                </li>
+                                <li>
+                                    <label><span></span></label>
+                                    <input type="text" name="cf8_field_2" class="single fldrequired" value="Введите Ваш телефон" onfocus="clearField(this)" onblur="setField(this)"/><input type="hidden" name="cf8_field_2_regexp" value="^[+]?[-0-9\(\) ]{10,20}$"/>
+                                    <span class="reqtxt"></span>
+                                </li>
+                                <li>
+                                    <label><span></span></label>
+                                    <input type="text" name="cf8_field_2" class="single fldrequired" value="Введите Ваш email" onfocus="clearField(this)" onblur="setField(this)"/><input type="hidden" name="cf8_field_2_regexp" value="^[+]?[-0-9\(\) ]{10,20}$"/>
+                                    <span class="reqtxt"></span>
+                                </li>
+                            </ol>
+                            <p class="cf-sb">
+                                <input type="submit" name="sendbutton8" class="sendbutton" value="Заказать проект" onclick="return cforms_validate('8', false)"/>
+                            </p>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <div class="container">
+                    <div class="text-call">
+                        Остались вопросы? Звоните!
+                    </div>
+                    <ul class="contact">
+                        <li>8 (8422) 222 22 22</li>
+                        <li>e-mail: info@4u-group.ru</li>
+                        <li>ИНН: 88888888</li>
+                        <li>ОГРН: 12346554</li>
+                        <li>Адрес: г. Москва, ул. Радионова 134</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-line">
+                <div class="container">
+                    АкваСтиль - все права защищены
+                </div>
+            </div>
         </footer>
 
         <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.min.js"><\/script>')</script>
         <script src="js/vendor/jquery.fancybox/jquery.fancybox.pack.js"></script>
+        <script src="js/vendor/slick/slick.min.js"></script>
         <script src="js/main.js"></script>
 
         <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->

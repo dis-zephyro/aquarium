@@ -80,7 +80,8 @@
   left: 0;
   right: 0;
   top: 20px;
-  z-index: 100;
+  height: 130px;
+  z-index: 999;
   position: fixed;
 }
 .topnav ul {
@@ -115,17 +116,33 @@
   font-size: 14px;
   position: absolute;
 }
+.topnav .logo {
+  top: 44px;
+  left: 47px;
+  width: 308px;
+  height: 54px;
+  position: absolute;
+  background: url("../img/logo.png") 0 0 no-repeat;
+}
+.topnav .header-callback {
+  top: 43px;
+  right: 2px;
+  z-index: 200;
+  position: absolute;
+}
 .topnav .tel {
-  margin-left: 400px;
+  top: 46px;
+  left: 400px;
   padding-bottom: 15px;
   color: #126ea0;
   font-size: 30px;
   font-weight: 700;
   line-height: 40px;
+  position: absolute;
 }
 .topnav.bg {
   top: 0;
-  background: rgba(255, 255, 255, 0.8);
+  background: #ffffff;
 }
 .btn {
   height: 42px;
@@ -209,7 +226,6 @@
 .cform li {
   margin-bottom: 17px;
 }
-.cform li select,
 .cform li input[type="text"] {
   margin: 0;
   color: #fff;
@@ -221,6 +237,27 @@
   line-height: 22px;
   padding: 10px 15px;
   background: url("../img/input.png") 0 0 no-repeat;
+}
+.cform li select {
+  margin: 0;
+  color: #fff;
+  width: 100%;
+  height: 43px;
+  border: none;
+  outline: none;
+  font-size: 18px;
+  line-height: 22px;
+  padding: 10px 15px;
+  background: url("../img/bg-select.png") 0 0 no-repeat;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  text-indent: 0.01px;
+  text-overflow: '';
+  -ms-appearance: none;
+  appearance: none!important;
+}
+.cform li select::-ms-expand {
+  display: none;
 }
 .cform li option {
   background: #00192e;
@@ -262,20 +299,6 @@ body {
 }
 .block01 .container {
   height: 100%;
-}
-.block01 .logo {
-  top: 64px;
-  left: 47px;
-  width: 308px;
-  height: 54px;
-  position: absolute;
-  background: url("../img/logo.png") 0 0 no-repeat;
-}
-.block01 .header-callback {
-  top: 63px;
-  right: 2px;
-  z-index: 200;
-  position: absolute;
 }
 .block01 h1 {
   font-size: 36px;
@@ -353,13 +376,15 @@ body {
   left: 50%;
   bottom: 25px;
   width: 140px;
+  cursor: pointer;
   font-size: 16px;
   font-weight: 700;
   margin-left: -70px;
   position: absolute;
   text-align: center;
-  text-transform: uppercase;
   padding-bottom: 35px;
+  text-decoration: none;
+  text-transform: uppercase;
   background: url("../img/b01_more.png") center bottom no-repeat;
 }
 .block02 {
@@ -1100,14 +1125,14 @@ body {
   text-transform: uppercase;
   text-decoration: underline;
 }
-.order .btn-close {
-  top: 8px;
-  right: 10px;
-  width: 14px;
-  height: 14px;
+.btn-quest {
+  right: 0;
+  top: 380px;
+  width: 46px;
+  height: 224px;
+  position: fixed;
   cursor: pointer;
-  position: absolute;
-  background: url("../img/btn-close.png") 0 0 no-repeat;
+  background: url("../img/btn-quest.png") 0 0 no-repeat;
 }
 .form-popup {
   width: 380px;
@@ -1115,6 +1140,16 @@ body {
   padding: 14px 16px;
   border: 1px solid #333d48;
   background: #000d20;
+  position: relative;
+}
+.btn-close {
+  top: 8px;
+  right: 10px;
+  width: 14px;
+  height: 14px;
+  cursor: pointer;
+  position: absolute;
+  background: url("../img/btn-close.png") 0 0 no-repeat;
 }
 /* Typography
    ========================= */

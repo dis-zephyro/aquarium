@@ -2,7 +2,8 @@
   left: 0;
   right: 0;
   top: 20px;
-  z-index: 100;
+  height: 130px;
+  z-index: 999;
   position: fixed;
 }
 .topnav ul {
@@ -37,15 +38,31 @@
   font-size: 14px;
   position: absolute;
 }
+.topnav .logo {
+  top: 44px;
+  left: 47px;
+  width: 308px;
+  height: 54px;
+  position: absolute;
+  background: url("../img/logo.png") 0 0 no-repeat;
+}
+.topnav .header-callback {
+  top: 43px;
+  right: 2px;
+  z-index: 200;
+  position: absolute;
+}
 .topnav .tel {
-  margin-left: 400px;
+  top: 46px;
+  left: 400px;
   padding-bottom: 15px;
   color: #126ea0;
   font-size: 30px;
   font-weight: 700;
   line-height: 40px;
+  position: absolute;
 }
 .topnav.bg {
   top: 0;
-  background: rgba(255, 255, 255, 0.8);
+  background: #ffffff;
 }

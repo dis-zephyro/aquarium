@@ -14,7 +14,12 @@ $('.reply-more').click(function() {
     $('.reply').slick('slickNext');
 });
 
-$(".popup").fancybox({
+$(".showcase-image a").fancybox({
+    'padding' : 0,
+    'closeBtn' : false
+});
+
+$(".popup, .btn-buy").fancybox({
     'padding' : 0,
     'closeBtn' : false
 });
@@ -36,4 +41,18 @@ $(function() {
             $('.topnav').removeClass('bg');
         }
     });
+});
+
+
+$('.more').click(function(){
+    var str=$(this).attr('href');
+    $.scrollTo(str,300, {offset:-130});
+    return false;
+});
+
+
+$('.topnav li a').click(function(){
+    var str=$(this).attr('href');
+    $.scrollTo(str,300, {offset:-130});
+    return false;
 });

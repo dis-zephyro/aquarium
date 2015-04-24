@@ -52,22 +52,6 @@ body {
 		height: 100%;
 	}
 
-	.logo {
-		top: 64px;
-		left: 47px;
-		width: 308px;
-		height: 54px;
-		position: absolute;
-		background: url("../img/logo.png") 0 0 no-repeat;
-	}
-
-	.header-callback {
-		top: 63px;
-		right: 2px;
-		z-index: 200;
-		position: absolute;
-	}
-
 	h1 {
 		font-size: 36px;
 		padding-top: 240px;
@@ -150,13 +134,15 @@ body {
 		left: 50%;
 		bottom: 25px;
 		width: 140px;
+		cursor: pointer;
 		font-size: 16px;
 		font-weight: 700;
 		margin-left: -70px;
 		position: absolute;
 		text-align: center;
-		text-transform: uppercase;
 		padding-bottom: 35px;
+		text-decoration: none;
+		text-transform: uppercase;
 		background: url("../img/b01_more.png") center bottom no-repeat;
 	}
 }
@@ -1031,19 +1017,17 @@ body {
 			text-decoration: underline;
 		}
 	}
-
-	.btn-close {
-		top: 8px;
-		right: 10px;
-		width: 14px;
-		height: 14px;
-		cursor: pointer;
-		position: absolute;
-		background: url("../img/btn-close.png") 0 0 no-repeat;
-	}
-
 }
 
+.btn-quest {
+	right: 0;
+	top: 380px;
+	width: 46px;
+	height: 224px;
+	position: fixed;
+	cursor: pointer;
+	background: url("../img/btn-quest.png") 0 0 no-repeat;
+}
 
 .form-popup {
 	width: 380px;
@@ -1051,6 +1035,17 @@ body {
 	padding: 14px 16px;
 	border: 1px solid #333d48;
 	background: #000d20;
+	position: relative;
+}
+
+.btn-close {
+	top: 8px;
+	right: 10px;
+	width: 14px;
+	height: 14px;
+	cursor: pointer;
+	position: absolute;
+	background: url("../img/btn-close.png") 0 0 no-repeat;
 }
 
 

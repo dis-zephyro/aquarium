@@ -115,6 +115,14 @@
   font-size: 14px;
   position: absolute;
 }
+.topnav .tel {
+  margin-left: 400px;
+  padding-bottom: 15px;
+  color: #126ea0;
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 40px;
+}
 .topnav.bg {
   top: 0;
   background: rgba(255, 255, 255, 0.8);
@@ -263,18 +271,10 @@ body {
   position: absolute;
   background: url("../img/logo.png") 0 0 no-repeat;
 }
-.block01 .tel {
-  top: 70px;
-  left: 400px;
-  color: #126ea0;
-  font-size: 30px;
-  font-weight: 700;
-  line-height: 40px;
-  position: absolute;
-}
 .block01 .header-callback {
   top: 63px;
   right: 2px;
+  z-index: 200;
   position: absolute;
 }
 .block01 h1 {
@@ -295,30 +295,59 @@ body {
   position: relative;
 }
 .block01 .benefit li {
-  width: 160px;
   font-size: 20px;
   text-align: center;
   position: absolute;
 }
 .block01 .benefit li.item1 {
-  top: 35px;
-  left: 0;
+  top: 0px;
+  left: -25px;
+  z-index: 100;
+  width: 186px;
+  height: 313px;
+  padding-top: 35px;
+  padding-left: 15px;
+  background: url("../img/b01_item01.png") 0 0 no-repeat;
 }
 .block01 .benefit li.item2 {
-  top: 125px;
-  left: 210px;
+  top: 80px;
+  left: 190px;
+  z-index: 100;
+  width: 158px;
+  height: 246px;
+  padding-top: 25px;
+  padding-left: 15px;
+  background: url("../img/b01_item02.png") 0 0 no-repeat;
 }
 .block01 .benefit li.item3 {
-  top: 20px;
-  left: 400px;
+  top: 0px;
+  left: 410px;
+  z-index: 100;
+  width: 157px;
+  height: 281px;
+  padding-top: 25px;
+  padding-left: 0px;
+  background: url("../img/b01_item03.png") 0 0 no-repeat;
 }
 .block01 .benefit li.item4 {
-  top: 125px;
-  left: 610px;
+  top: 110px;
+  left: 630px;
+  z-index: 100;
+  width: 182px;
+  height: 254px;
+  padding-top: 20px;
+  padding-right: 40px;
+  background: url("../img/b01_item04.png") 0 0 no-repeat;
 }
 .block01 .benefit li.item5 {
-  top: 0;
-  left: 780px;
+  top: -40px;
+  left: 760px;
+  z-index: 100;
+  width: 189px;
+  height: 317px;
+  padding-top: 35px;
+  padding-right: 15px;
+  background: url("../img/b01_item05.png") 0 0 no-repeat;
 }
 .block01 .more {
   left: 50%;
@@ -383,7 +412,6 @@ body {
   background: url("../img/b02_item5.png") top center no-repeat;
 }
 .block03 {
-  height: 794px;
   padding-top: 53px;
   padding-bottom: 60px;
   background: url("../img/b03_bg.jpg") top center repeat-y;
@@ -826,6 +854,7 @@ body {
 .block08 .step li {
   height: 127px;
   font-size: 18px;
+  position: relative;
 }
 .block08 .step li span {
   display: block;
@@ -834,20 +863,47 @@ body {
 .block08 .step li .btn {
   font-size: 20px;
 }
+.block08 .step li i {
+  top: -4px;
+  left: -140px;
+  width: 120px;
+  height: 192px;
+  position: absolute;
+  background: url("../img/b08_item01.png") 0 0 no-repeat;
+}
 .block08 .step li.item2 {
   margin-left: 130px;
+}
+.block08 .step li.item2 i {
+  left: -150px;
+  background: url("../img/b08_item02.png") 0 0 no-repeat;
 }
 .block08 .step li.item3 {
   margin-left: 240px;
 }
+.block08 .step li.item3 i {
+  background: url("../img/b08_item03.png") 0 0 no-repeat;
+}
 .block08 .step li.item4 {
   margin-left: 370px;
+}
+.block08 .step li.item4 i {
+  left: -150px;
+  background: url("../img/b08_item04.png") 0 0 no-repeat;
 }
 .block08 .step li.item5 {
   margin-left: 490px;
 }
+.block08 .step li.item5 i {
+  left: -152px;
+  background: url("../img/b08_item05.png") 0 0 no-repeat;
+}
 .block08 .step li.item6 {
   margin-left: 600px;
+}
+.block08 .step li.item6 i {
+  left: -142px;
+  background: url("../img/b08_item06.png") 0 0 no-repeat;
 }
 .block08 .step li.item7 {
   padding-top: 35px;
@@ -859,12 +915,20 @@ body {
 .block09 .footer-top {
   height: 668px;
   padding-top: 65px;
+  position: relative;
 }
 .block09 .footer-top h2 {
   font-size: 46px;
   margin-bottom: 60px;
   color: #ffcc00;
   font-family: 'festusregular';
+}
+.block09 .footer-top .truck {
+  left: 30px;
+  top: 270px;
+  width: 399px;
+  height: 234px;
+  position: absolute;
 }
 .block09 .footer-top .text-block {
   float: left;
@@ -1044,6 +1108,13 @@ body {
   cursor: pointer;
   position: absolute;
   background: url("../img/btn-close.png") 0 0 no-repeat;
+}
+.form-popup {
+  width: 380px;
+  height: 410px;
+  padding: 14px 16px;
+  border: 1px solid #333d48;
+  background: #000d20;
 }
 /* Typography
    ========================= */

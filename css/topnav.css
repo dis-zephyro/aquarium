@@ -37,6 +37,14 @@
   font-size: 14px;
   position: absolute;
 }
+.topnav .tel {
+  margin-left: 400px;
+  padding-bottom: 15px;
+  color: #126ea0;
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 40px;
+}
 .topnav.bg {
   top: 0;
   background: rgba(255, 255, 255, 0.8);

@@ -1,3 +1,11 @@
+$(function(){
+    var mr_input="input[type=text]";
+    $(mr_input).each(function() {    $(this).data('stext',$(this).val());                                               });
+    $(mr_input).focus(function(){	 $(this).val()==$(this).data('stext')  ?   $(this).val(''): "0";	               	});
+    $(mr_input).blur(function() {    $(this).val().length<=0               ?   $(this).val($(this).data('stext')): "0"; });
+});
+
+
 $('.slider').slick({
     autoplay: true,
     prevArrow : '<span class="slide-nav prev"></span>',
@@ -19,7 +27,7 @@ $(".showcase-image a").fancybox({
     'closeBtn' : false
 });
 
-$(".popup, .btn-buy").fancybox({
+$(".popup, .btn-buy, .shipping-link").fancybox({
     'padding' : 0,
     'closeBtn' : false
 });
